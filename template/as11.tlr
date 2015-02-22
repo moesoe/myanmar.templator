@@ -1,3 +1,3 @@
 <:=resource file=".\\input\\head.htm" parameter3=" class=&quot;active&quot;" parameter8="#as11.htm"=:>
-<:=resource file=".\\input\\photopagebody.htm" parameter1="as12gs.jpg" parameter2="Bo Letya, Bo Setkya and Bo Teza (Bogyoke Aung San) in Japan. (1941)" =:>
+<:=resource file=".\\input\\photopagebody.htm" parameter1="as12gs.jpg" parameter2="ဗိုလ် လက်ျာ၊ ဗိုလ် စကြာ နှင့် ဗိုလ် တေဇ (ဗိုလ်ချုပ် အောင်ဆန်း) တို့ ကို ဂျပန် ပြည် တွင် တွေ့ရစဉ် (၁၉၄၁ခုနှစ်)" =:>
 <:=resource file=".\\input\\tail.htm" =:>

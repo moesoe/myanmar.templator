@@ -1,3 +1,3 @@
 <:=resource file=".\\input\\head.htm" parameter3=" class=&quot;active&quot;" parameter8="#as09.htm"=:>
-<:=resource file=".\\input\\photopagebody.htm" parameter1="as8gs.jpg" parameter2="Wedding Photograph of Bogyoke Aung San and Daw Khin Kyi. (September 1942)" =:>
+<:=resource file=".\\input\\photopagebody.htm" parameter1="as8gs.jpg" parameter2="ဗိုလ်ချုပ် အောင်ဆန်း နှင့် ဒေါ်ခင်ကြည် တို့ ၏ မင်္ဂလာဆောင် ဓာတ်ပုံ (၁၉၄၂ ခုနှစ်  စက်တင်ဘာလ)" =:>
 <:=resource file=".\\input\\tail.htm" =:>

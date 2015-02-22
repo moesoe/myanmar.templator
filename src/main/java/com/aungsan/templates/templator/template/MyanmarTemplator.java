@@ -76,7 +76,8 @@ public class MyanmarTemplator {
 		for (int i = 0; i < TEMPALTE_MAP.length; i++) {
 			processTemplate(TEMPALTE_MAP[i][0], TEMPALTE_MAP[i][1]);
 		}
-
+		
+		System.out.println("\nMyanmar templator completed successfully.");
 	}
 
 	private static void processTemplate(String templateName, String outputName) {

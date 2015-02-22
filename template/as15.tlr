@@ -1,3 +1,3 @@
 <:=resource file=".\\input\\head.htm" parameter3=" class=&quot;active&quot;" parameter8="#as15.htm"=:>
-<:=resource file=".\\input\\photopagebody.htm" parameter1="as15gs.jpg" parameter2="Bogyoke Aung San in London. (January 1947)" =:>
+<:=resource file=".\\input\\photopagebody.htm" parameter1="as15gs.jpg" parameter2="လန်ဒန်၊ အင်္ဂလန် ရောက် ဗိုလ်ချုပ်  အောင်ဆန်း (၁၉၄၇ ခုနှစ် ဇန်နဝါရီလ)" =:>
 <:=resource file=".\\input\\tail.htm" =:>

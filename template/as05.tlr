@@ -1,3 +1,3 @@
 <:=resource file=".\\input\\head.htm" parameter3=" class=&quot;active&quot;" parameter8="#as05.htm"=:>
-<:=resource file=".\\input\\photopagebody.htm" parameter1="as4gs.jpg" parameter2="Bogyoke Aung San in Lodon, January 1947, between Thakin Mya and Lord Pethwick-Lawrence" =:>
+<:=resource file=".\\input\\photopagebody.htm" parameter1="as4gs.jpg" parameter2="လန်ဒန် ရောက် ဗိုလ်ချုပ် အောင်ဆန်း (အလယ်) ကို သခင်မြ နှင့် လော့(ဒ်) ပက်(သ်)ဝစ်(ခ်) လောရင့်(စ်) တို့နှင့် အတူ တွေ့ရစဉ်  (၁၉၄၇ ခုနှစ် ဇန်နဝါရီလ)" =:>
 <:=resource file=".\\input\\tail.htm" =:>
