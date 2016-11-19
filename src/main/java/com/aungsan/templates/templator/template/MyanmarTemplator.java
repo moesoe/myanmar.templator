@@ -37,7 +37,7 @@ public class MyanmarTemplator {
 			"parameter7", "parameter8", "parameter9", "parameter10", "self" };
 	private static final List<String> PARAMETERS_LIST = Arrays
 			.asList(PARAMETERS);
-	private static final String[][] TEMPALTE_MAP = {
+/*	private static final String[][] TEMPALTE_MAP = {
 			{ "index.tlr", "index.htm" }, { "speeches.tlr", "speeches.htm" },
 			{ "photo.tlr", "photo.htm" }, { "timeline.tlr", "timeline.htm" },
 			{ "perspectives.tlr", "perspectives.htm" },
@@ -66,7 +66,52 @@ public class MyanmarTemplator {
 			{ "msencarta99.tlr", "msencarta99.htm" },
 			{ "y2kgrolier.tlr", "y2kgrolier.htm" },
 			{ "viewguestbook.tlr", "viewguestbook.htm" },
-			{ "as01.tlr", "as01.htm" }};
+			{ "as01.tlr", "as01.htm" },
+			{ "indexjul19.tlr", "indexjul19.htm"},
+			{ "paradespeech.tlr", "paradespeech.htm"},
+			{ "divcommanders.tlr", "divcommanders.htm"}};*/
+/*	
+	private static final String[][] TEMPALTE_MAP = {
+			{ "index.tlr", "index.htm" },
+			{ "speeches.tlr", "speeches.htm" },
+			{ "paradespeech.tlr", "paradespeech.htm"},
+			{ "divcommanders.tlr", "divcommanders.htm"},
+			{ "thayetchaung.tlr", "thayetchaung.htm"},
+			{ "peoplesfreedom.tlr", "peoplesfreedom.htm"},
+			{ "afpflspeech.tlr", "afpflspeech.htm"},
+			{ "electionchallenge.tlr", "electionchallenge.htm"}};*/
+
+	
+/*	private static final String[][] TEMPALTE_MAP = {
+			{ "speeches.tlr", "speeches.htm" },
+			{ "fallensoldiers.tlr", "fallensoldiers.htm"},
+			{ "middleterrace.tlr", "middleterrace.htm"},
+			{ "nationalunity.tlr", "nationalunity.htm"}};	*/
+	
+/*	private static final String[][] TEMPALTE_MAP = {
+			{ "speeches.tlr", "speeches.htm" },
+			{ "mayday.tlr", "mayday.htm"},
+			{ "educationpolitics.tlr", "educationpolitics.htm"},
+			{ "beforemayday.tlr", "beforemayday.htm"},
+			{ "redbloodday.tlr", "redbloodday.htm"},
+			{ "rakhinestate.tlr", "rakhinestate.htm"}};	*/	
+	
+/*	private static final String[][] TEMPALTE_MAP = {
+			{ "speeches.tlr", "speeches.htm" },			
+			{ "freedomprotest.tlr", "freedomprotest.htm" },
+			{ "peoplesbattle.tlr", "peoplesbattle.htm"},
+			{ "communistexpulsion.tlr", "communistexpulsion.htm"}};	*/
+	
+	private static final String[][] TEMPALTE_MAP = {
+			{ "speeches.tlr", "speeches.htm" },			
+			{ "independencefirst.tlr", "independencefirst.htm" },
+			{ "thanbyuzayat.tlr", "thanbyuzayat.htm"},
+			{ "strongforopportunity.tlr", "strongforopportunity.htm"}};		
+	
+	// Temporary fix for LOWER_DOT and ASAT ordering on iOS	
+	private static final String INCORRECT_ASAT_lD = "\u103a\u1037";
+
+	private static final String CORRECT_lD_ASAT = "\u1037\u103a";	
 
 	/**
 	 * @param args
@@ -177,6 +222,13 @@ public class MyanmarTemplator {
 		return inputLine;
 	}
 
+	private static String fixLowerDotAsat(String inputLine)
+	{
+		String output = inputLine.replaceAll(INCORRECT_ASAT_lD, CORRECT_lD_ASAT);
+		
+		return output;
+	}
+	
 	private static void processResource(String resourceItem,
 			BufferedWriter outputWriter, String outputName) {
 		String resourceFileName = getResourceAttributes(resourceItem,
@@ -197,8 +249,11 @@ public class MyanmarTemplator {
 			String outputLine;
 
 			while ((outputLine = buffreader.readLine()) != null) {
-
-				outputWriter.write(replaceParameters(outputLine, values));
+				
+				String output = replaceParameters(outputLine, values);
+				output = fixLowerDotAsat(output);
+				
+				outputWriter.write(output);
 				outputWriter.write(NEW_LINE);
 				outputWriter.flush();
 
